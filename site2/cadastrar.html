@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Ajustado</title>
+    <link rel="stylesheet" href="cadastro.css">
+</head>
+<body>
+    <div id="centro">
+        <form action="ll.php" method="post" class="forms">
+            <h1>Bem Vindo</h1>
+            <div class="container">
+                <div class="lado-esquerdo">
+                    <label for="email"><b>E-mail</b></label>
+                    <input type="Email" name="emaill" id="email" placeholder="Digite seu E-mail"> <br>
+
+                    <label for="senha"><b>Senha</b></label>
+                    <input type="password" name="senhaa" id="senha" placeholder="Digite Sua Senha"> <br>
+
+                    <label for="confirmsenha"><b>Confirme Sua Senha</b></label>
+                    <input type="password" name="confirmsenha" id="confirmsenha" placeholder="Confirme Sua Senha"><br>
+
+                    <label for="cnpj"><b>CNPJ</b></label>
+                    <input type="text" name="cnpj" id="cnpj" placeholder="Digite o CNPJ da Empresa">
+                </div>
+
+                <div class="lado-direito">
+                    
+
+                    <label for="endereco"><b>Endereço</b></label>
+                    <input type="text" name="endereco" id="endereco" placeholder="Endereço da Empresa"> <br>
+
+                    <label for="produtos"><b>Produtos</b></label>
+                    <input type="text" name="produtos" id="produtos" placeholder="Quais Produtos Você oferece?">
+
+                    
+                </div>
+                
+                
+            </div>
+            <a href="index.html">
+                <button type="submit" name="btncadastrar">Cadastrar</button>
+            </a>
+        
+        </form>
+       
+        <script>
+            
+            let senha = document.getElementById('senha');
+            let confirmsenha = document.getElementById('confirmsenha');
+    
+    function validarSenha() {
+      if (senha.value != confirmsenha.value) {
+        confirmsenha.setCustomValidity("Senhas diferentes!");
+        confirmsenha.reportValidity();
+        return false;
+      }
+      else {
+        confirmsenha.setCustomValidity("");
+        return true;
+      }
+    }
+
+    
+    // verificar também quando o campo for modificado, para que a mensagem suma quando as senhas forem iguais
+    confirmsenha.addEventListener('input', validarSenha);
+
+          </script>
+
+        
+    </div>
+</body>
+</html>

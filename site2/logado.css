@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    overflow-x: hidden; /* Previne scroll horizontal */
+}
+
+/* Estilizando os 3 pontos */
+.menu-icon {
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    z-index: 1000;
+}
+
+.menu-icon span {
+    background-color: #333;
+    width: 30px;
+    height: 3px;
+    border-radius: 5px;
+}
+
+/* Estilizando a aba lateral */
+.side-menu {
+    position: fixed;
+    top: 0;
+    right: -250px; /* Inicialmente escondida */
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    color: white;
+    transition: right 0.3s ease;
+    padding: 20px;
+}
+
+.side-menu.open {
+    right: 0; /* Quando abrir */
+}
+
+/* Estilos do conteúdo da aba lateral */
+.side-menu h2 {
+    margin-bottom: 20px;
+    color: #ff9800;
+}
+
+.side-menu ul {
+    list-style-type: none;
+}
+
+.side-menu ul li {
+    margin: 10px 0;
+}
+
+.side-menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.side-menu ul li a:hover {
+    color: #ff9800;
+}

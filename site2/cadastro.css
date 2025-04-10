@@ -1,0 +1,69 @@
+.forms {
+    color: rgb(0, 0, 0);
+    width: 50%;
+    padding: 10px;
+    border-radius: 50px;
+    background-color: rgb(255, 255, 255);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.507);
+    
+}
+#centro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* altura da página em 100% */
+}
+h1 {
+    display : flex;
+    justify-content: center;
+    margin-top: 0; /* Remove o espaço acima do título */
+}
+button {
+    width: 100%; /* Faz o botão ocupar 100% da largura disponível */
+    padding: 10px; /* É responsável por 10px de espaço interno ao botão */
+    margin-top: 20px; /* Adiciona 20px de espaço acima do botão, ou seja, 20px de distância das caixas acima dele */
+    border: none; /* Retira a borda padrão do botão */
+    background-color: #4CAF50; /* Cor de fundo do botão (#4CAF50) */
+    color: white; /* cor do texto */
+    font-size: 16px; /* tamanho da fonte */
+    cursor: pointer; /* cursor mãozinha */
+    border-radius: 20px; /* arredonda os cantos do botão deixando ele meio redondo */
+}
+body{
+    background: linear-gradient(to bottom, 
+    rgba(30, 26, 185, 0.2) 25%, 
+    rgba(25, 26, 85, 0.3) 50%, 
+    rgba(153, 9, 9, 0.4) 100%);
+}
+input[type="text"], input[type="password"], input[type="email"], input[type="number"] {
+    width: 50%;  /* aqui define a largura para os inputs ficarem lado a lado */
+    padding: 10px;
+    margin-top: 5px;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    box-sizing: border-box;     
+}
+.container {
+    display: flex; /* Configura os elementos filhos para serem exibidos lado a lado (linha) */
+    /* justify-content: space-between; /* Deixa os filhos espaçados uniformemente */
+   /* gap: 20px; /* Ele vai adicionar um espaço de 20px de espaço entre os elementos filhos */
+}
+
+.lado-direito {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    margin-left: -150px;
+}
+.lado-esquerdo {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+.lado-direito2 {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+
+}
