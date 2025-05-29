@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+}
+nav.side-menu{ /* ESSA PARTE CONFIGURA O SIDE-MENU*/
+    position: fixed;
+    margin-top: 28.5px; /* REMOVER AQ*/ /* 28.5px */
+    box-shadow: 3px 0 0 #b7ff65f8;
+    width: 45px;
+    height: 100%;
+    background-color: black;
+    padding: 30px 0px 30px 10px; /* onde esta 10 era 15px*/
+    overflow: hidden; /* esconde o texto*/
+    transition: .4s; /* Ou seria possível utilizar também transition: width 0.4s ease;, que se refere diretamente ao width.*/
+    z-index: 1; /* quanto maior seu z-index, indica a prioridade de aparição da página no site.*/
+}
+ul{
+    height: 100%;
+    list-style-type: none;
+    font-size: 16px;
+}
+ul li.menu-item a{ /* ESSA PARTE CONFIGURA AQUELE RISCO QUE FICA EM BAIXO DA TAG <A> e OS ESPAÇOS EM RELAÇÃO OS ELEMENTOS FILHOS*/
+    color: white;
+    text-decoration: none;
+    display: flex;
+    padding: 10px 5px; /*esse espaço é responsável por definir a distância de um icon pro outro. aqui era 20px*/
+    margin-bottom: 10px;
+    line-height: 27px;
+    
+}
+ul li.menu-item:hover{
+    background-color:#2c90fcf8;
+    color: red;
+}
+ul li.menu-item{/* ESSA CONFIG É RESPONSAVEL PELA TRANSIÇÃO DO HOVER */
+    transition: .4s;
+
+}
+#btn-abrir{
+    /*width: 100%; aqui é a "navbar" */
+    float:left;
+    width: 45px;
+    padding: 0px 0px 0px 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: white;
+    background: black;
+    
+    
+    
+}
+.text-items{ /* ESPAÇAMENTO DO TEXTO PARA OS ICONS*/
+    margin-left: 20px;
+    color: white;
+}
+.icons{/* ESPAÇAMENTO DO ICON PARA A PAREDE DO SIDEMENU */
+    margin-left: 5px; /* aqui era 10px */
+  
+}
+
+
+nav.side-menu:not(.expandir):hover {
+    width: 200px;
+}
+nav.side-menu.expandir{ /* Aqui eu utilizei o nav.side-menu.expandir para definir que só utilizaria o menu lateral, pois, me referi somente a ele, indicando que queria afetar somente o menu lateral. caso eu utilizasse o .expandir eu estaria usando a mesma classe para vários elementos diferentes, o que não é o caso dessa vez.*/
+    width: 200px;
+   
+} 
+#logout{
+    display: flex;
+    align-items: center;
+    text-align: start;
+    gap: 5px;
+    background-color: black;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+#logout:hover{
+    background: red;
+}
+
+
+#expandir { /* container interno que organiza o contéudo dentro da sidebar. O display flex foi adicionar para alinhar menu e botão (OBS: NÃO ADICIONAR OVERFLOW E INHERIT). Agora imagine que nav.side-menu e a casa e o #expandir o movel*/
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    
+}
+.menu-item.ativo {
+    background-color: #1c6ed8; /* Ou qualquer cor que represente "ativo" */
+    color: white;
+}
+
+.nav2{
+    position: fixed;
+    
+    box-shadow: 0 3px 0 #b7ff65f8;
+    background-color: black;
+    
+    color: white;
+    width: 100%;
+   
+    
+  
+   
+}
+
+.test{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 23px;
+}
+

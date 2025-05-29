@@ -1,0 +1,3 @@
+
+Area TCC- CONSTRUÇÃO CIVIL
+A area1 será uma forma de estoque onde o fornecedor atualizaria um determinado produto e sua quantidade em estoque para aparecer para o dono que possue (permissão adm) no site.

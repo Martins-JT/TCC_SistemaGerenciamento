@@ -1,0 +1,75 @@
+.requisicao{
+    padding: 70px;
+    background-color: rgba(62, 92, 82, 0.733);
+    height: 100vh;
+    
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(100px, 200px));
+    gap: 100px;
+    border-style: solid;
+    border-width: medium;
+    border-color: rgba(54, 49, 49, 0.726);
+    
+    width: 81em;
+    height: 30vh;
+    position: relative;
+}
+input[type="text"], input[type="password"], input[type="email"], input[type="number"], select {
+    width: 30vh;
+    height: auto;
+    padding: 8px;
+    /*margin-top: 5px; */
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    
+}
+#botao{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.areas{
+    display: grid;
+    grid-template-areas: 
+    'area area'
+    'area2 area2'
+    'area3 area4';
+    gap: 30px;
+    
+}
+#area{
+    grid-area: area;
+    
+    /*grid-column: span 3; essa parte do código significa que (span 1) vai ocupar a primeira coluna (span  2 ou 3) vai ocupar 2 ou 3 colunas*/ 
+    height: 22vh;
+}
+#area2{
+    grid-area: area2;
+    background-color: aliceblue;
+    height: 30vh;
+    width: 81em;
+}
+#area3{
+    grid-area: area3;
+    background-color: violet;
+}
+#area4{
+    grid-area: area4;
+    background-color: cyan;
+}
+.area1{
+    height: 100px;
+    
+}
