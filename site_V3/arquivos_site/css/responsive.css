@@ -1,0 +1,93 @@
+/* === RESPONSIVIDADE GERAL PARA TELAS MENORES QUE 768px === */
+@media (max-width: 768px) {
+  .areas {
+    grid-template-areas:
+      'area'
+      'area2'
+      'area3'
+      'area4';
+    gap: 20px;
+  }
+
+  .container1,
+  .informs-edit,
+  .container,
+  .container2 {
+    grid-template-columns: 1fr !important;
+    height: auto;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .form-edit {
+    width: 100%;
+    padding: 10px;
+  }
+
+  #area2 {
+    width: 100% !important;
+    height: auto;
+  }
+
+  input[type="text"],
+  input[type="password"],
+  input[type="email"],
+  input[type="number"],
+  select {
+    width: 100% !important;
+    margin-bottom: 10px;
+  }
+
+  #btn-salvar,
+  #btn-cancel {
+    position: static !important;
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .btn-edit {
+    position: static !important;
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: right;
+  }
+
+  .informs-1,
+  .informs-2,
+  .informs-3 {
+    gap: 10px;
+  }
+
+  .area1 {
+    height: auto !important;
+  }
+
+  .requisicao {
+    padding: 20px;
+    height: auto;
+  }
+
+  .nav2 {
+    position: relative;
+  }
+
+  nav.side-menu.expandir {
+    width: 100% !important;
+    position: relative;
+    height: auto;
+  }
+
+  nav.side-menu:not(.expandir):hover {
+    width: 100% !important;
+  }
+
+  ul li.menu-item a {
+    justify-content: center;
+    padding: 8px;
+  }
+
+  #logout {
+    width: 100%;
+    justify-content: center;
+  }
+}

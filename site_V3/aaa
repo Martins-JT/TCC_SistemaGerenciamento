@@ -1,0 +1,480 @@
+ align-content:flex-start;
+    flex-wrap: wrap;  /* Permite que os itens se movam para a linha de baixo quando o espaço acabar */
+    justify-content: space-between; /* Espaçamento entre os inputs */
+    gap: 15px;
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cadastro.css">
+</head>
+<body>
+    
+    <div id="centro">
+        <div class="forms">
+        <form action="" method="post">
+            <h1> Bem Vindo </h1>
+    
+            <!-- Container de inputs -->
+            <div class="input-group">
+                <label for="email"><b> E-mail </b></label>
+                <input type="email" name="email" id="email"> 
+    
+                <label for="senha"><b> Senha </b></label>
+                <input type="password" name="senha" id="senha">
+    
+                <label for="confirmsenha"><b> Confirme Sua Senha </b></label>
+                <input type="password" name="confirmsenha" id="confirmsenha"> 
+    
+                <label for="cnpj"><b> CNPJ </b></label>
+                <input type="text" name="cnpj" id="cnpj">
+            </div>
+    
+            <!-- Nova coluna com inputs à direita -->
+            <div class="input-group-right">
+                <label for="telefone"><b> Telefone </b></label>
+                <input type="text" name="telefone" id="telefone">
+    
+                <label for="endereco"><b> Endereço </b></label>
+                <input type="text" name="endereco" id="endereco">
+            </div>
+    
+            <button type="submit"> Cadastrar </button>
+        </form>
+        </div>
+        </div>
+</body>
+</html>
+
+
+
+.forms {
+    color: rgb(0, 0, 0);
+    width: 60%;
+    height: 50vh;
+    padding: 10px;
+    border-radius: 50px;
+    background-color: rgb(255, 255, 255);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.507);
+    
+    
+}
+#centro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Garante que ocupe a altura total da página */
+}
+h1 {
+    display : flex;
+    justify-content: center;
+    margin-top: 0; /* Remove o espaço acima do título */
+}
+button{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(to bottom, 
+    rgba(30, 26, 185, 0.2) 25%, 
+    rgba(25, 26, 85, 0.3) 50%, 
+    rgba(153, 9, 9, 0.4) 100%);
+}
+input[type="text"], input[type="password"], input[type="email"], input[type="number"] {
+    display: block;
+    justify-content: space-between;
+    width: 20%;  /* aqui define a largura para os inputs ficarem lado a lado */
+    padding: 10px;
+    margin-top: 5px;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    box-sizing: border-box;
+  
+   
+}
+.input-group {
+display: flex;
+flex-direction: column;
+
+
+}
+.input-group-right {
+display: flex;
+flex-direction: row;
+}
+
+
+FORMULARIO
+#form {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 32px;
+    height: 100%;
+}
+
+DIV DOS INPUTS
+#input_container {
+    display: grid;
+    gap: 24px;
+}
+
+.forms {
+    color: rgb(0, 0, 0); /* Define a cor do texto dentro do formulário como preto */
+    width: 60%; /* Define a largura do formulário como 60% da largura do container pai */
+    padding: 10px; /* Adiciona 10px de espaço interno (padding) ao redor do conteúdo do formulário */
+    border-radius: 20px; /* Arredonda os cantos do formulário em 20px */
+    background-color: rgb(255, 255, 255); /* Define a cor de fundo do formulário como branco */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* Define a fonte usada no texto */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Adiciona uma sombra ao redor do formulário */
+}
+
+#centro {
+    display: flex; /* Configura o elemento como flexbox para alinhar os filhos */
+    align-items: center; /* Alinha os itens no centro verticalmente */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    height: 100vh; /* Garante que o container ocupe 100% da altura da janela */
+}
+
+.lado-esquerdo, .lado-direito {
+    display: flex; /* Define que os itens dentro dessas classes usarão flexbox */
+    flex-direction: column; /* Organiza os itens em uma coluna (verticalmente) */
+    width: 45%; /* Define a largura desses containers como 45% da largura total */
+}
+
+input {
+    padding: 10px; /* Adiciona espaço interno ao redor do texto nos inputs */
+    margin-bottom: 10px; /* Adiciona um espaço de 10px abaixo de cada campo de entrada */
+    border: 2px solid #ccc; /* Define uma borda sólida de 2px com cor cinza claro (#ccc) */
+    border-radius: 20px; /* Arredonda os cantos dos campos de entrada em 20px */
+    box-sizing: border-box; /* Inclui padding e borda no cálculo total do tamanho */
+}
+
+button.botao-cadastrar {
+    width: 100%; /* Faz o botão ocupar 100% da largura disponível */
+    padding: 10px; /* Adiciona 10px de espaço interno ao botão */
+    margin-top: 20px; /* Adiciona 20px de espaço acima do botão */
+    border: none; /* Remove a borda padrão do botão */
+    background-color: #4CAF50; /* Define a cor de fundo do botão como verde (#4CAF50) */
+    color: white; /* Define a cor do texto do botão como branco */
+    font-size: 16px; /* Define o tamanho da fonte usada no botão */
+    cursor: pointer; /* Altera o cursor para "mãozinha" quando o botão for apontado */
+    border-radius: 20px; /* Arredonda os cantos do botão em 20px */
+    box-sizing: border-box; /* Inclui padding no cálculo total do tamanho do botão */
+}
+
+.container {
+    display: flex; /* Configura os elementos filhos para serem exibidos lado a lado (linha) */
+    justify-content: space-between; /* Deixa os filhos espaçados uniformemente */
+    gap: 20px; /* Adiciona 20px de espaço entre os elementos filhos */
+}
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/requisicoes.css">
+    <link rel="stylesheet" href="../css/areasstyle.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="../javascript/script.js"></script>
+</head>
+<body>
+<?php
+include_once("../../../testando.html");
+
+?>
+<div class="requisicao">
+        <div class="areas">
+    <div class="area1" id="area">
+
+       <p><span class="identificar">Vitrine Virtual</span></p>
+
+        <div class="container1">
+             <button class="btn-edit" title="Editar" onclick="editarInformacoes()">✏️</button>
+           <!-- quando ele clicar aqui esses 2 informs precisam ficar none, e os informs para edição aparecer no lugar deles-->
+             <div class="informs-1 informs-info">
+        <strong>Produtos: <span id="produto"></span> </strong> 
+       <strong>Estoque disponível: <span id="quantidade"></span></strong> 
+      <strong>Marca: <span id="marca"></span> </strong>  
+       <p><strong>Última atualização:</strong> <span id="ultimaAtualizacao">Sem Atualizações</span></p>
+        </div>
+        
+        <div class="informs-2 informs-info">
+       <strong>Categoria: <span id="categoria"></span> </strong>  
+        <strong> Peso Unitário: <span id="peso"></span></strong> 
+        <strong>Descrição: <span id="descricao"></span> </strong> 
+        </div>
+
+        <div class="informs-3 informs-info">
+       <strong>Garantia: <span id="garantia"></span></strong> 
+       
+       
+        </div>
+
+        
+            <form action="" method="post" class="form-edit" id="form-edit">
+ <div class="informs-edit">
+     <div class="column2">
+       <label for="produtoInput">Produto:</label>
+        <input type="text" id="produtoInput" placeholder="Digite o nome do produto">
+        <label for="quantidadeInput">Estoque Disponível:</label>
+        <input type="number" id="quantidadeInput" placeholder="ex: 150">
+       
+        
+        
+    </div>
+
+       <div class="column2">
+        <label for="medida-selecionada">Medida:</label>
+                                    <select name="medida" id="medida-selecionada">
+                                        <option value="" >Selecione uma medida</option>
+                                        <option value="metros"> Metros </option>
+                                        <option value="unidade">Unidades</option>
+                                        <option value="volume">Volume</option>
+                                        <option value="kg">KG</option>
+                                        
+
+                                    </select>
+        <label for="marcaproduto">Marca:</label>
+        <input type="text" id="marcaproduto" placeholder="Marca do produto">
+    </div>
+        <div class="column3">
+        <label for="categoriaproduto">Categoria:</label>
+        <input type="text" id="categoriaproduto" placeholder="ex: cimento">
+
+        <label for="pesoproduto">Peso unitário:</label>
+        <input type="text" id="pesoproduto" placeholder="ex: 50kg.">
+
+        </div>
+
+        <div class="column4">
+        <label for="descricaoproduto">Descrição:</label>
+        <input type="text" id="descricaoproduto" placeholder="Utilizado em estruturas">
+
+        <label for="garantiaproduto">Garantia:</label>
+        <input type="text" id="garantiaproduto" placeholder="ex: 3 meses.">
+
+        </div>
+        
+        <button type="button" onclick="salvarEdit()" id="btn-salvar">Salvar</button>
+        <button type="button" onclick="cancelarEdit()" id="btn-cancel">Cancelar</button>
+
+</div>
+
+
+</form>
+
+
+        </div>
+
+        
+<p><span class="identificar">Requisições</span></p>
+    </div>
+    
+    <div class="area1" id="area2">
+    
+            
+         <form action="" method="post">
+        
+       <div class="container">
+        
+        <div class="texts">
+            a1
+            <input type="text" name="">
+          
+           
+                a2
+                <input type="text" name="">
+                
+               
+                    a3
+                    <input type="text" name="">
+                    </div>
+                    <div class="texts-2">
+                        a1
+                        <input type="text" name="">
+                      
+                       
+                            a2
+                            <input type="text" name="">
+                            
+                           
+                                a3
+                                <input type="text" name="">
+                                </div>
+
+                                <div class="texts-3">
+                                    Produtos
+                                    <select name="produtos">
+                                        <option value="" placeholder="Selecione um Produto">Selecione um Produto</option>
+                                        <option value="produto1"> produto1</option>
+                                        <option value="produto2">produto2</option>
+                                        <option value="produto3">produto3</option>
+                                        <option value="produto4">produto4</option>
+                                        <option value="produto5">produto5</option>
+                                        <option value="produto6">produto6</option>
+
+                                    </select>
+                                  
+                                   
+                                        a2
+                                        <input type="text" name="">
+                                        
+                                       
+                                            a3
+                                            <input type="text" name="">
+                                            <button type="submit" id="botao"> Enviar </button>    
+                                            </div>
+                                            
+                                            
+                            </div>
+                             
+    </form>
+    </div>
+
+
+    <div class="area1" id="area3">
+    Area 3
+    
+    </div>
+    
+
+    <div class="area1" id="area4">
+        
+         <div class="container2">
+            <form action="" method="post">
+        <div id="espaco1">
+            
+        <input type="text" name="" id="">
+
+        </div>
+</form>
+
+
+        </div>
+    </div>
+    </div>
+</div>
+
+
+
+<script>
+ document.getElementById('btn-abrir').addEventListener('click', function () {
+    document.getElementById('side').classList.toggle('expandir');
+});
+
+  </script>
+</body>
+</html>
+
+
+
+
+Ótima pergunta!
+
+O `->` em PHP é o **operador de acesso a membros de objeto**.
+Ele é usado para acessar **propriedades** (variáveis) e **métodos** (funções) de um **objeto**.
+
+---
+
+## 🧠 Pensando de forma simples:
+
+Se você tem um **objeto**, o `->` permite que você **"acesse o que está dentro dele"**.
+
+---
+
+## ✅ Exemplo 1: Acessando uma propriedade
+
+```php
+$carro = new stdClass(); // cria um objeto vazio
+$carro->marca = "Toyota";
+$carro->modelo = "Corolla";
+
+echo $carro->marca; // imprime: Toyota
+```
+
+---
+
+## ✅ Exemplo 2: Chamando um método
+
+```php
+class Pessoa {
+    public $nome;
+
+    public function dizerOla() {
+        return "Olá, meu nome é " . $this->nome;
+    }
+}
+
+$p = new Pessoa();
+$p->nome = "Ana";
+
+echo $p->dizerOla(); // Olá, meu nome é Ana
+```
+
+---
+
+## ✅ Exemplo 3: No MySQLi (como no seu código)
+
+```php
+$conexao = new mysqli('localhost', 'root', '', 'entrega');
+
+// prepare() é um método do objeto $conexao
+$stmt = $conexao->prepare("SELECT * FROM produtos");
+
+// insert_id é uma propriedade do objeto $conexao
+$ultimo_id = $conexao->insert_id;
+```
+
+Aqui:
+
+* `$conexao` é um **objeto da classe `mysqli`**.
+* `prepare()` e `insert_id` são **método** e **propriedade**, respectivamente.
+* O `->` serve para **acessar esses elementos dentro do objeto**.
+
+---
+
+## 🔁 Comparação com arrays (só pra fixar)
+
+```php
+// Array
+$carro = ["marca" => "Toyota"];
+echo $carro['marca']; // array usa colchetes []
+
+// Objeto
+$carro = new stdClass();
+$carro->marca = "Toyota";
+echo $carro->marca;   // objeto usa -> seta
+```
+
+---
+
+## ✅ Em resumo:
+
+| Tipo   | Símbolo de acesso | Exemplo           |
+| ------ | ----------------- | ----------------- |
+| Objeto | `->`              | `$obj->metodo()`  |
+| Array  | `[]`              | `$array['chave']` |
+
+---
+
+Se quiser, posso mostrar a diferença entre objetos (`stdClass`, `mysqli`, `PDO`, etc.) e arrays no contexto de sistemas PHP como o seu. Deseja isso também?

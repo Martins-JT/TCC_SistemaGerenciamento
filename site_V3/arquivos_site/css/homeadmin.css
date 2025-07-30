@@ -1,0 +1,52 @@
+.home{
+    padding: 70px;
+    height: auto;
+    /* cor para test background-color: rgb(140, 84, 243); */
+}
+
+.container2{
+    display: flex;
+    flex-wrap: wrap; /* quando os itens filhos não cabem na mesma linha são automaticamente movidos para a próxima linha */
+    gap: 6px;
+    border-style: solid;
+    border-width: medium;
+    border-color: rgba(54, 49, 49, 0.726);
+    min-height: 215px;
+    height: auto;
+    border-radius: 10px;
+    background-color: rgb(94, 44, 44);
+    max-height: 435px;
+    overflow-y: auto;
+}
+
+.areas{
+    display: grid;
+    grid-template-areas: 
+    'area area'
+    'area2 area2'
+    'area3 area3'
+    'area4 area4';
+    gap: 60px; /* tava 30px : OS 3 ABAIXO NAO TINHA*/
+    width: 100%;
+    max-width: 1200px;/* não estava aqui antes pode remover se necessário */
+    margin: 0 auto;
+    
+}
+#area {
+    grid-area: area;
+    background-color: purple;
+
+}
+
+#area2 {
+    grid-area: area2;
+    
+}
+#area3 {
+    grid-area: area3;
+    background-color: aquamarine;
+}
+#area4 {
+    grid-area: area4;
+    background-color: palegreen;
+}

@@ -1,0 +1,94 @@
+CREATE DATABASE IF NOT EXISTS entrega;
+
+USE ENTREGA;
+
+CREATE TABLE IF NOT EXISTS informacoes
+(
+ID TINYINT auto_increment PRIMARY KEY,
+usuario VARCHAR(40) NOT NULL,
+Senha VARCHAR(150) NOT NULL,
+endereco VARCHAR(40) NOT NULL,
+email VARCHAR(40) NOT NULL,
+cep VARCHAR(40) NOT NULL,
+produto VARCHAR(50) not null,
+caracteristica VARCHAR(50) not null,
+foto VARCHAR(100) not null,
+permissoes ENUM('usuario', 'admin') not null
+);
+CREATE TABLE IF NOT EXISTS produtos
+(
+id_produto TINYINT auto_increment PRIMARY KEY,
+usuario VARCHAR(40) NOT NULL,
+foto VARCHAR(100) not null,
+produto VARCHAR(50) not null,
+caracteristica VARCHAR(50) not null,
+peso_unidade VARCHAR(50) not null,
+estoque VARCHAR(50) not null,
+descricao VARCHAR(50) not null,
+categoria VARCHAR(50) not null
+
+);
+
+CREATE TABLE IF NOT EXISTS ofertas
+(
+id_oferta TINYINT auto_increment PRIMARY KEY,
+usuario VARCHAR(40) NOT NULL,
+foto VARCHAR(100) not null,
+produto VARCHAR(50) not null,
+caracteristica VARCHAR(50) not null,
+peso_unidade VARCHAR(50) not null,
+estoque VARCHAR(50) not null,
+descricao VARCHAR(50) not null,
+categoria VARCHAR(50) not null,
+dias VARCHAR(50) not null
+);
+select * from informacoes;
+select * from produtos;
+select * from ofertas order by id_oferta asc;
+
+update informacoes set permissoes = 'admin' where id = 2;	
+-- Cria o banco de dados
+INSERT INTO produtos (usuario, foto, produto, caracteristica, peso_unidade, estoque, descricao, categoria)
+VALUES
+('Jose', 'img/usuario.png', 'Cimento Portland', 'Secagem Rápida', '20kg', '200 sacos', 'Cimento de alta resistência', 'Material de Construção');
+
+INSERT INTO produtos (usuario, foto, produto, caracteristica, peso_unidade, estoque, descricao, categoria)
+VALUES
+('Jose', 'img/usuario.png', 'Areia Lavada', 'Granulometria Fina', '30kg', '500 sacos', 'Areia ideal para assentamento de blocos e reboco', 'Material de Construção');
+
+INSERT INTO produtos (usuario, foto, produto, caracteristica, peso_unidade, estoque, descricao, categoria)
+VALUES
+('Jose', 'img/usuario.png', 'Brita 1', 'Alta resistência', '25kg', '300 sacos', 'Pedra britada para concretos e fundações', 'Material de Construção');
+
+INSERT INTO produtos (usuario, foto, produto, caracteristica, peso_unidade, estoque, descricao, categoria)
+VALUES
+('Jose', 'img/usuario.png', 'Bloco de Concreto', 'Vedação', '14kg', '1000 unidades', 'Bloco estrutural de concreto para alvenaria', 'Material de Construção');
+
+INSERT INTO produtos (usuario, foto, produto, caracteristica, peso_unidade, estoque, descricao, categoria)
+VALUES
+('Jose', 'img/usuario.png', 'Argamassa AC-I', 'Uso Interno', '20kg', '250 sacos', 'Argamassa colante para revestimentos cerâmicos internos', 'Material de Construção');
+
+INSERT INTO produtos (usuario, foto, produto, caracteristica, peso_unidade, estoque, descricao, categoria)
+VALUES
+('Jose', 'img/usuario.png', 'Cal Hidratada', 'Alta pureza', '20kg', '150 sacos', 'Cal virgem hidratada para construção civil e pintura', 'Material de Construção');
+
+INSERT INTO produtos (usuario, foto, produto, caracteristica, peso_unidade, estoque, descricao, categoria)
+VALUES
+('Jose', 'img/usuario.png', 'Refrigerante Cola', 'Com gás', '2L', '120 unidades', 'Refrigerante sabor cola, embalagem PET', 'Bebidas');
+
+INSERT INTO produtos (usuario, foto, produto, caracteristica, peso_unidade, estoque, descricao, categoria)
+VALUES
+('Jose', 'img/usuario.png', 'Suco de Laranja Natural', 'Sem conservantes', '1L', '80 unidades', 'Suco integral de laranja, 100% natural', 'Bebidas');
+
+INSERT INTO produtos (usuario, foto, produto, caracteristica, peso_unidade, estoque, descricao, categoria)
+VALUES
+('Jose', 'img/usuario.png', 'Água Mineral com Gás', 'Fonte Natural', '500ml', '200 unidades', 'Água mineral gaseificada, ideal para hidratação', 'Bebidas');
+
+INSERT INTO produtos (usuario, foto, produto, caracteristica, peso_unidade, estoque, descricao, categoria)
+VALUES
+('Jose', 'img/usuario.png', 'Cerveja Pilsen', 'Leve e refrescante', '350ml', '150 unidades', 'Cerveja tipo Pilsen, perfeita para o verão', 'Bebidas');
+
+INSERT INTO produtos (usuario, foto, produto, caracteristica, peso_unidade, estoque, descricao, categoria)
+VALUES
+('Jose', 'img/usuario.png', 'Energético Citrus', 'Com cafeína', '250ml', '100 unidades', 'Bebida energética sabor citrus, estimula e revigora', 'Bebidas');
+

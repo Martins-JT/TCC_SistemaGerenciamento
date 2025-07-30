@@ -1,0 +1,154 @@
+.container1{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /*antes grid-template-columns: repeat(3, minmax(100px, 200px)); */
+    column-gap: 70px;
+    height: auto;
+    background-color: rgb(141 121 121);;
+    position: relative;
+    overflow: hidden; /* faz com que o contéudo  se atingir um certo limite não saia do seu container*/
+    border-style: solid;
+    border-width: medium;
+    border-radius: 10px;
+    /*  HEIGHT ANTERIOR height: 22vh;. | POSSÍVEL MUDANÇA SEM O HEIGHT 
+    max-width: 1400px;
+    margin: 0 auto;
+    position: relative;
+    
+    */
+}
+
+.informs-1, .informs-2, .informs-3{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    
+    width: auto;
+    white-space: nowrap; /* Impede o texto de quebrar para uma nova linha */
+}
+
+
+
+.informs-edit{
+    display: grid; /* Para definir o layout de grid */
+    grid-template-columns: repeat(4, minmax(200px, 400px));
+    gap: 30px;
+    
+}
+
+
+.btn-edit{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 19px;
+}
+.form-edit{
+   display: none;
+   width: 100vh;
+}
+#btn-salvar{
+    position: absolute;
+    bottom: 20px;
+    right: 80px;
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+ 
+}
+
+#btn-cancel{
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+    padding: 10px 5px;
+    background-color: rgb(204, 38, 38);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+ 
+}
+
+
+
+    
+    .identificar:hover::after {
+      opacity: 0.92;
+    }
+
+/*.identificar2 {
+  position: relative;
+  top: -65px; /* move a div 40px para cima
+    <div class="test4">
+   <p><span class="identificar2">Nova Requisição</span></p>
+</div>
+} */
+ 
+.container2{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(100px, 200px));
+    position: relative;
+    overflow: hidden;
+    border-style: solid;
+    border-width: medium;
+    column-gap: 5vw;
+    border-radius: 10px;
+    background-color: rgb(141 121 121);;
+}
+
+
+@media ( min-width: 1012px) and (max-width: 1400px)
+{
+   
+}
+.test4{
+    
+    position: absolute;
+    bottom: 90px;
+   left: 353px;
+   font-size: 20px;
+}
+.identificar2{
+    position: absolute;
+    margin-top: -32px;
+    line-height: 1.5; /* Aumenta a altura da linha para gerar espaço */
+    font-family: 'Arial', sans-serif;
+    font-size: 20px;
+    text-decoration: none; /* Remove a linha de sublinhado padrão */
+}
+.identificar2::after {
+      content: '';
+      position: absolute;
+      bottom: -0px; /* Ajuste a posição da linha */
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background: linear-gradient(to right, #ff7f50, #ff1493, #ff7f50);
+      border-radius: 5px;
+      opacity: 1;
+       transition: opacity 0.3s ease-in-out;
+    
+    }
+
+   
+
+/*
+  .areas {
+    grid-template-areas:
+      'area'
+      'area2'
+      'area3'
+      'area4';
+    gap: 20px;
+  }
+
+*/
