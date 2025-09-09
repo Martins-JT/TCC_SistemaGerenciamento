@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Ajustado</title>
+    <link rel="stylesheet" href="../css/cadastro.css">
+</head>
+<body>
+    <div id="centro">
+        <form action="../../arquivos_php/banco.php" method="post" class="forms" enctype="multipart/form-data">
+            <h1>Bem Vindo</h1>
+            <div class="container">
+                <div class="lado-esquerdo">
+                    <label for="text"><b>E-mail</b></label>
+                    <input type="text" name="email" id="text"> <br>
+
+                    <label for="senha"><b>Senha</b></label>
+                    <input type="password" name="senha" id="senha"> <br>
+
+                    <label for="confirmsenha"><b>Confirme Sua Senha</b></label>
+                    <input type="password" name="confirmsenha" id="confirmsenha"><br>
+
+                    <label for="cnpj"><b>imagem</b></label>
+                    <input type="file" name="imagem" accept="image/*" id="arquivoinput">
+                </div>
+
+                <div class="lado-direito">
+                    
+
+                    <label for="endereço"><b>Endereço</b></label>
+                    <input type="text" name="endereoo" id="endereoo">
+                </div>
+
+                
+            </div>
+            <button type="submit">Cadastrar</button>
+        </form>
+    </div>
+</body>
+</html>
