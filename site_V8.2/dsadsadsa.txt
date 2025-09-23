@@ -1,0 +1,13 @@
+/* tabela_historico #546b8fd4, button #0c3043cf,
+    
+    background: linear-gradient(to right, rgb(13 83 157 / 88%), rgb(19 96 179));
+    background: linear-gradient(to bottom, #d0e7ff, #007bff);
+background: linear-gradient(to top, transparent, #28a745);
+
+background: 
+  linear-gradient(to right, rgba(0,0,0,0.2), rgba(0,0,0,0.6)),
+  linear-gradient(to top, #6a11cb, #2575fc);
+
+    
+    
+    */
