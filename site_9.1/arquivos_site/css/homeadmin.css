@@ -1,0 +1,101 @@
+.home{
+    padding: 70px;
+    height: auto;
+    /* background: linear-gradient(to right, rgb(51 43 43 / 72%), rgb(55 41 41 / 73%)); */
+    /* cor para test background-color: rgb(140, 84, 243); */
+}
+/* container das ofertas*/
+.container_oferta{
+    display: flex;
+    flex-wrap: wrap; /* quando os itens filhos não cabem na mesma linha são automaticamente movidos para a próxima linha */
+    gap: 5px;
+    border-style: solid;
+    border-width: medium;
+    border-color: rgba(54, 49, 49, 0.726);
+    min-height: 215px;
+    height: auto;
+    border-radius: 10px;
+    /* background-color: rgba(54, 49, 49, 0.726); */
+    background: linear-gradient(to right, rgb(59 54 54 / 72%), rgb(55 50 50 / 73%));
+    max-height: 435px;
+    overflow-y: auto;
+    padding: 5px;
+}/* fim container das ofertas */
+
+.container_vitrine{/* container da vitrine */
+    display: flex;
+    flex-wrap: wrap; /* quando os itens filhos não cabem na mesma linha são automaticamente movidos para a próxima linha */
+    gap: 5px;
+    border-style: solid;
+    border-width: medium;
+    border-color: rgba(54, 49, 49, 0.726);
+    min-height: 215px;
+    height: auto;
+    border-radius: 10px;
+    /* background-color: #919bb1; */
+    background: linear-gradient(to right, rgb(59 54 54 / 72%), rgb(55 50 50 / 73%));
+    max-height: 435px;
+    overflow-y: auto;
+    padding: 5px;
+    
+}/* fim container vitrine */
+
+.container_carrinho{/* container da vitrine */
+    display: flex;
+    flex-wrap: wrap; /* quando os itens filhos não cabem na mesma linha são automaticamente movidos para a próxima linha */
+    gap: 5px;
+    border-style: solid;
+    border-width: medium;
+    border-color: rgba(54, 49, 49, 0.726);
+    min-height: 215px;
+    height: auto;
+    border-radius: 10px;
+    background: linear-gradient(to right, rgb(59 54 54 / 72%), rgb(55 50 50 / 73%));
+    max-height: 435px;
+    overflow-y: auto;
+    padding: 5px;
+}/* fim container vitrine */
+
+.areas{
+    display: grid;
+    grid-template-areas: 
+    'area area'
+    'area2 area2'
+    'area3 area3'
+    'area4 area4';
+    gap: 60px; /* tava 30px : OS 3 ABAIXO NAO TINHA*/
+    width: 100%;
+    max-width: 1900px;/* não estava aqui antes pode remover se necessário */
+    margin: 0 auto;
+    
+}
+
+
+#area {
+    grid-area: area;
+    position: relative;
+    margin-top: 20px;
+
+}
+
+#area2 {
+    grid-area: area2;
+    
+}
+#area3 {
+    grid-area: area3;
+    position: relative;
+    
+}
+#area4 {
+    grid-area: area4;
+    background-color: palegreen;
+}
+/* @media (min-width: 1500px) {
+  .container2 {
+    width: 100%; /* ou qualquer valor proporcional desejado 
+    gap: calc(2vw - 4px);
+
+    
+  }
+} */
