@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+/* body{
+   
+} */
+/* .centro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+} */
+.perfil{
+    display: flex;
+   /*  gap: 5px; espaçamento automático entre foto e texto */
+    align-items: center;
+    /* word-break: break-all; */
+    color: rgb(220 38 38 / var(--tw-text-opacity, 1));
+    gap: 5px;
+    && img{ border-radius: 30px;}
+}
+.ofertas{
+    border: 2px solid black;
+    height: 220px;
+    width: 150px;
+    position: relative;
+    background: linear-gradient(135deg, #232323 0%, #2d2d2d 100%);
+    border-radius: 5px;
+    padding: 5px;
+}
+.produtos{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.8rem;
+    /* height: 70%; */
+    gap: 5px;
+    color: white;
+}
+#botao{
+    position: absolute;
+   /*  color: rgb(59, 102, 180); */
+    right: 0px;
+    top: 0px;
+    cursor: pointer;
+    border: none;
+    height: 0px;
+    background-color: transparent;
+}
+
+#btncancel{
+    position: absolute;
+    right: 20px;
+    top: 0px;
+    border: none;
+    cursor: pointer;
+    color: rgb(221, 32, 32);
+    background-color: transparent;
+}
+
+#btnconfirmar{
+    position: absolute;
+    bottom: 2px;
+    right: 70px;
+    padding: 5px;
+    background-color: #4CAF50; /* #2ab42ec5 */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#btncancelar{
+    position: absolute;
+    bottom: 2px;
+    right: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    background-color: #f51d1dd5;
+    cursor: pointer;
+}
+#btncarrinho{
+    position: absolute;
+    bottom: 2px;
+    right: 140px;
+    padding: 0px;
+    border-radius: 5px;
+    border: none;
+    background-color: green;
+    cursor: pointer;
+}
+.valor_car{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    position: absolute;
+    right: 0px;
+    top: -20px;
+    border-radius: 5px;
+}
+#btnaceitar{
+    padding: 0px;
+    border-radius: 5px;
+    border: none;
+    color: green;
+    /* background-color: green; */
+    background-color: transparent;
+    cursor: pointer;
+}
+#btnaceitar:hover{
+background-color: rgb(57, 235, 190);
+}
+
+.duracao{
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    padding: 5px;
+    
+}
+
+.duracao2{
+    position: absolute;
+    left: 6px;
+    bottom: 0px;
+}
+
+.conteudo{
+    background-color: rgb(17 24 39 / var(--tw-bg-opacity, 1));
+    border-radius: 15px;
+    position: relative;
+    padding: 8px;
+    border: 2px solid #3498db;
+    height: 100%;
+    max-height: 340px;
+    width: 100%;
+    max-width: 450px;
+    
+    
+}
+
+.controle_conteudo{
+    display: none;
+    height: 100%;
+    width: 100vw;
+    backdrop-filter: blur(2px);
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+.pesquisar{
+    position: absolute;
+    right: 0px;
+    top: -32px;
+}
+input[type="text"]{
+margin-bottom: 30px;
+border-radius: 20px;
+padding: 5px;
+border: 2px solid #ccc; 
+outline: none; /* REMOVE A BORDA PADRÃO DO NAVEGADOR*/
+transition: all 0.4s ease;
+width: 100%;
+background-color: rgb(17 24 39 / var(--tw-bg-opacity, 1));
+}
+input:focus {
+    /* background-color: lightyellow; Cor de fundo quando o input é focado  */
+    outline: none;
+    border: 2px solid rgb(78, 241, 214);         /* Borda azul quando o input é focado */
+}
+.controle-icon{
+    position: absolute;
+    right: 0px;
+    color: white;
+}
+
+
+/* width: 100%;
+    padding: 8px;
+    margin-top: 5px; 
+    background-color: cadetblue;
+    border: 2px solid #181616;
+    border-radius: 20px;
+    box-sizing: border-box;
+    margin-bottom: 10px; */
